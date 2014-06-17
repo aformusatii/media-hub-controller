@@ -1,0 +1,26 @@
+(SCL/INT0) PD0
+EICRA (INT3:0) and EICRB (INT7:4).
+
+
+7 00000000
+6 00000000
+5 00000000
+4 00000000
+
+3 10101000
+2 01010111
+1 10011111
+0 00000000
+
+
+printf ("\n7 "BYTETOBINARYPATTERN, BYTETOBINARY( (uint8_t)(ir_cmd >> 56)) );
+printf ("\n6 "BYTETOBINARYPATTERN, BYTETOBINARY( (uint8_t)(ir_cmd >> 48)) );
+printf ("\n5 "BYTETOBINARYPATTERN, BYTETOBINARY( (uint8_t)(ir_cmd >> 40)) );
+printf ("\n4 "BYTETOBINARYPATTERN, BYTETOBINARY( (uint8_t)(ir_cmd >> 32)) );
+
+printf ("\n3 "BYTETOBINARYPATTERN, BYTETOBINARY( (uint8_t)(ir_cmd >> 24)) );
+printf ("\n2 "BYTETOBINARYPATTERN, BYTETOBINARY( (uint8_t)(ir_cmd >> 16)) );
+printf ("\n1 "BYTETOBINARYPATTERN, BYTETOBINARY( (uint8_t)(ir_cmd >> 8)) );
+printf ("\n0 "BYTETOBINARYPATTERN, BYTETOBINARY( (uint8_t)(ir_cmd)) );
+
+printf ("\n");
