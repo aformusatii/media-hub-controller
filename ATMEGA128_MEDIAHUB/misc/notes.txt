@@ -1,3 +1,5 @@
+AVR -> PATHS -> GNU make -> C:\cygwin\bin
+
 (SCL/INT0) PD0
 EICRA (INT3:0) and EICRB (INT7:4).
 
