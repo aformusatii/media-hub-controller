@@ -17,8 +17,8 @@ void usart_init() {
     // Enable receiver and transmitter and Interrupt on receive complete
     UCSR0B = (1<<RXEN0)|(1<<TXEN0)|(1<<RXCIE);
 
-    // Set frame format: 8data, 1stop bit
-    UCSR0C = (1<<USBS0)|(3<<UCSZ00);
+    // Set frame format: 8data, 2stop bit, Odd Parity
+    UCSR0C = (1<<UPM01)|(1<<UPM00)|(1<<USBS0)|(1<<UCSZ01)|(1<<UCSZ00);
 
     // setup our stdio stream
     stdout = &mystdout;
